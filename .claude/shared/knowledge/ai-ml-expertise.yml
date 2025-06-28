@@ -1,0 +1,113 @@
+## AI_ML_Domains
+# AI/機械学習の統合知識マップ
+
+deep_learning:
+  architectures:
+    cnn:
+      knowledge: "Convolutional layers, pooling, feature maps"
+      knowledge_ja: "畳み込み層、プーリング、特徴マップ"
+      evidence_approach: "Reference paper metrics and benchmarks"
+      friendly_delivery: |
+        "CNNの実装、楽しそう！
+         ResNetの残差接続で勾配消失問題を解決できるよ"
+    
+    transformer:
+      knowledge: "Attention mechanism, positional encoding, multi-head attention"
+      knowledge_ja: "アテンション機構、位置エンコーディング、マルチヘッドアテンション"
+      evidence_approach: "Cite Attention Is All You Need and subsequent papers"
+      friendly_delivery: |
+        "Transformerアーキテクチャの実装してみない？
+         Self-attentionで長距離依存関係も捉えられるよ！"
+    
+    diffusion:
+      knowledge: "Score matching, DDPM, DDIM, denoising process"
+      knowledge_ja: "スコアマッチング、DDPM、DDIM、ノイズ除去プロセス"
+      evidence_approach: "Reference diffusion model papers and sampling methods"
+      friendly_delivery: |
+        "拡散モデルの実装、面白そう！
+         DPM-Solver++なら推論ステップを75%削減できるんだって"
+
+llm_vlm:
+  llm_expertise:
+    scaling_laws:
+      knowledge: "Model size, data scaling, compute optimal training"
+      knowledge_ja: "モデルサイズ、データスケーリング、計算最適トレーニング"
+      evidence_patterns:
+        - "According to Chinchilla scaling laws"
+        - "Kaplan et al. demonstrated"
+        - "GPT-4 technical report shows"
+    
+    fine_tuning:
+      methods: ["LoRA", "QLoRA", "Prefix tuning", "P-tuning v2"]
+      evidence_approach: "Compare parameter efficiency and performance"
+      friendly_delivery: |
+        "LoRAでファインチューニングしてみない？
+         パラメータ数を99%削減しつつ、性能も維持できるよ！"
+  
+  vlm_expertise:
+    architectures: ["CLIP", "BLIP", "LLaVA", "GPT-4V"]
+    knowledge: "Vision-language alignment, contrastive learning"
+    knowledge_ja: "視覚言語アラインメント、対照学習"
+    friendly_delivery: |
+      "視覚言語モデルの実装、ワクワクするね！
+       CLIPの対照学習で画像とテキストを同じ空間にマップできるよ"
+
+frameworks_integration:
+  pytorch:
+    strengths: ["Research flexibility", "Dynamic graphs", "Pythonic API"]
+    evidence_usage: "Cite PyTorch Lightning benchmarks"
+    integrated_behavior: |
+      internal: "Check GPU memory usage, profile training speed"
+      external_ja: |
+        "PyTorchで実装しよう！
+         Dynamic graphsで柔軟にモデルを組めるよ"
+  
+  transformers:
+    strengths: ["Pre-trained models", "Easy fine-tuning", "Community support"]
+    evidence_usage: "Reference Hugging Face model performance"
+    integrated_behavior: |
+      internal: "Validate model configurations, check VRAM requirements"
+      external_ja: |
+        "Transformersライブラリ使えば簡単！
+         事前学習済みモデルで時間も大幅短縮できるよ"
+
+mathematical_foundations:
+  optimization:
+    algorithms: ["SGD", "Adam", "AdamW", "Lion"]
+    knowledge: "Gradient descent variants, learning rate scheduling"
+    knowledge_ja: "勾配降下法の変種、学習率スケジューリング"
+    evidence_approach: "Compare convergence rates and final performance"
+    friendly_delivery: |
+      "最適化アルゴリズム試してみよう！
+       AdamWなら重み減衰がきれいに分離されて収束が安定するよ"
+  
+  information_theory:
+    concepts: ["Entropy", "KL divergence", "Mutual information"]
+    concepts_ja: ["エントロピー", "KLダイバージェンス", "相互情報量"]
+    applications: "Loss functions, regularization, uncertainty quantification"
+    friendly_delivery: |
+      "情報理論の概念を使ってみない？
+       エントロピーでモデルの不確実性を定量化できるよ！"
+
+practical_patterns:
+  model_evaluation:
+    evidence_requirements:
+      - "Use proper validation splits"
+      - "Report confidence intervals"
+      - "Compare against established baselines"
+    
+    friendly_communication:
+      - "Let's set up proper evaluation!"
+      - "I found some interesting patterns in the results"
+      - "How about we try this baseline comparison?"
+  
+  performance_optimization:
+    evidence_approach:
+      - "Profile GPU/CPU utilization"
+      - "Measure training/inference speed"
+      - "Monitor memory usage patterns"
+    
+    friendly_suggestions:
+      template_ja: |
+        "{optimization}を試してみない？
+         {evidence}で{improvement}の改善が期待できるよ！"

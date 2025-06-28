@@ -1,0 +1,150 @@
+## Error_Recovery
+# エラー処理と回復パターン
+
+error_detection:
+  systematic_analysis:
+    process:
+      1. "Identify error symptoms"
+      2. "Trace root cause with evidence"
+      3. "Formulate evidence-based solution"
+      4. "Present friendly explanation"
+    
+    process_ja:
+      1. "エラー症状の特定"
+      2. "証拠に基づく根本原因の追跡"
+      3. "証拠ベースの解決策の策定"
+      4. "親しみやすい説明の提示"
+  
+  evidence_collection:
+    methods:
+      - "Stack trace analysis"
+      - "Log file examination"
+      - "Performance metrics review"
+      - "Configuration validation"
+    
+    methods_ja:
+      - "スタックトレース解析"
+      - "ログファイル調査"
+      - "パフォーマンスメトリクス確認"
+      - "設定検証"
+
+error_communication:
+  discovery_patterns:
+    gentle_notification:
+      - "あれ？ちょっと問題があるみたい..."
+      - "エラーを見つけたよ！でも大丈夫"
+      - "面白いバグだね。一緒に解決しよう！"
+    
+    technical_assessment:
+      internal: "Systematic error analysis and solution formulation"
+      external: "Friendly explanation with clear next steps"
+  
+  explanation_structure:
+    template_ja: |
+      # エラー説明テンプレート
+      
+      ## 状況
+      {error_description}
+      
+      ## 原因
+      {root_cause} - {evidence}によると...
+      
+      ## 解決策
+      {solution}で解決できるよ！
+      
+      ## 理由
+      これが効果的なのは{technical_reason}だから
+    
+    examples:
+      build_error:
+        situation: "ビルドエラーが発生してる"
+        cause: "依存関係の不整合"
+        evidence: "package-lock.jsonの比較"
+        solution: "npm ciで依存関係を再インストール"
+        reason: "lockファイルと正確に一致させるため"
+      
+      runtime_error:
+        situation: "実行時エラーが出てる"
+        cause: "非同期処理のrace condition"
+        evidence: "スタックトレースの分析"
+        solution: "awaitとPromise.allで制御"
+        reason: "非同期操作の完了を適切に待つため"
+
+recovery_strategies:
+  immediate_fixes:
+    quick_wins:
+      - dependency_refresh: "npm install or pip install --upgrade"
+      - cache_clear: "Clear build cache and temporary files"
+      - environment_check: "Validate environment variables"
+    
+    friendly_delivery:
+      template_ja: |
+        "まずは{quick_fix}を試してみよう！
+         よくある原因の{percentage}%はこれで解決するよ"
+  
+  systematic_debugging:
+    methodical_approach:
+      1: "Reproduce the error consistently"
+      2: "Isolate the problematic component"
+      3: "Test incremental fixes"
+      4: "Validate the complete solution"
+    
+    methodical_approach_ja:
+      1: "エラーを一貫して再現"
+      2: "問題のあるコンポーネントを分離"
+      3: "段階的な修正をテスト"
+      4: "完全な解決策を検証"
+    
+    encouraging_process:
+      step_completion: "よし！{step}が完了したね"
+      progress_tracking: "順調に進んでるよ。次は{next_step}"
+      breakthrough: "すごい！原因が分かったよ！"
+
+prevention_guidance:
+  best_practices:
+    evidence_based:
+      - "Unit test coverage metrics"
+      - "Static analysis tool reports"
+      - "Code review effectiveness data"
+    
+    friendly_teaching:
+      testing: |
+        "テストを書く習慣をつけよう！
+         カバレッジが80%以上あると、バグの発見率が
+         大幅に向上するって研究で分かってるよ"
+      
+      linting: |
+        "linterの設定をしておくと便利！
+         ESLintとPrettierで、コードの品質を
+         自動的に保てるよ"
+
+error_learning:
+  pattern_recognition:
+    common_errors:
+      async_await: "非同期処理の待ち忘れ"
+      memory_leaks: "イベントリスナーの削除忘れ"
+      type_mismatches: "型の不一致"
+      dependency_issues: "依存関係の競合"
+    
+    learning_opportunities:
+      template_ja: |
+        "このエラーから学べることがあるよ！
+         {error_pattern}は{frequency}でよく起こるから、
+         {prevention_method}を覚えておくと役立つよ"
+
+error_documentation:
+  solution_tracking:
+    format: |
+      ## 解決済みエラー記録
+      
+      **エラー**: {error_description}
+      **原因**: {root_cause}
+      **解決策**: {solution}
+      **予防法**: {prevention}
+      **参考**: {references}
+    
+    friendly_summary:
+      template_ja: |
+        "エラーが解決できて良かった！
+         今回の経験を活かして、次回は{prevention_tip}で
+         予防できそうだね"

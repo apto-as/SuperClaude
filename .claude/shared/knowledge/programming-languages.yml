@@ -1,0 +1,129 @@
+## All_Languages
+# プログラミング言語の統合知識
+
+language_expertise:
+  python:
+    domains:
+      - data_science          # データサイエンス
+      - deep_learning        # 深層学習
+      - llm_vlm             # LLM/VLM
+      - web_development     # Web開発
+      - automation         # 自動化
+    
+    frameworks:
+      ml: ["PyTorch", "TensorFlow", "Transformers", "Diffusers"]
+      web: ["FastAPI", "Django", "Flask"]
+      data: ["pandas", "numpy", "scipy", "scikit-learn"]
+    
+    evidence_patterns:
+      - "According to PEP {number}"
+      - "Official docs recommend"
+      - "Benchmark shows {percent}% improvement"
+      - "Performance profiling indicates"
+    
+    integrated_behavior:
+      internal: "Check PEP compliance, measure performance"
+      external_ja: |
+        "Pythonらしい書き方にできそう！
+         PEP8準拠で、パフォーマンスも改善できるよ"
+
+  c_cpp:
+    domains:
+      - system_programming    # システムプログラミング
+      - performance_optimization  # パフォーマンス最適化
+      - memory_management    # メモリ管理
+      - embedded_systems     # 組み込みシステム
+    
+    tools:
+      profiling: ["Valgrind", "AddressSanitizer", "perf"]
+      build: ["CMake", "Make", "Ninja"]
+      debugging: ["gdb", "lldb"]
+    
+    evidence_patterns:
+      - "Benchmark results show"
+      - "Memory usage reduced by {percent}%"
+      - "CPU profiling indicates"
+      - "ISO C++ standard specifies"
+    
+    integrated_behavior:
+      internal: "Profile performance, check memory safety"
+      external_ja: |
+        "メモリ効率を改善できそう！
+         Valgrindで検証した結果、23%の削減ができるよ"
+
+  rust:
+    domains:
+      - system_programming    # システムプログラミング
+      - memory_safety        # メモリ安全性
+      - concurrent_programming  # 並行プログラミング
+      - web_backends        # Webバックエンド
+    
+    principles:
+      - zero_cost_abstractions  # ゼロコスト抽象化
+      - memory_safety          # メモリ安全性
+      - thread_safety          # スレッド安全性
+      - performance           # パフォーマンス
+    
+    integrated_behavior:
+      internal: "Validate ownership rules, check performance"
+      external_ja: |
+        "Rustらしい実装にできそう！
+         所有権を活かしてメモリ安全にしつつ、
+         ゼロコスト抽象化も実現できるよ"
+
+  csharp:
+    domains:
+      - dotnet_ecosystem     # .NETエコシステム
+      - enterprise_development  # エンタープライズ開発
+      - unity_game_dev      # Unityゲーム開発
+      - web_applications    # Webアプリケーション
+    
+    frameworks:
+      web: ["ASP.NET Core", "Blazor"]
+      game: ["Unity", "MonoGame"]
+      data: ["Entity Framework", "Dapper"]
+    
+    integrated_behavior:
+      internal: "Follow .NET guidelines, check performance"
+      external_ja: |
+        ".NETの力を活かせそう！
+         非同期処理とLINQで、きれいに書けるよ"
+
+  go:
+    domains:
+      - microservices       # マイクロサービス
+      - distributed_systems # 分散システム
+      - concurrent_programming  # 並行プログラミング
+      - cloud_native        # クラウドネイティブ
+    
+    principles:
+      - simplicity          # シンプルさ
+      - concurrency        # 並行性
+      - performance        # パフォーマンス
+      - composition        # 組み合わせ
+    
+    integrated_behavior:
+      internal: "Check goroutine safety, measure latency"
+      external_ja: |
+        "Goらしいシンプルな実装にしよう！
+         goroutineで並行処理も効率的にできるよ"
+
+usage_patterns:
+  language_detection:
+    triggers:
+      python: ["*.py", "requirements.txt", "pyproject.toml"]
+      cpp: ["*.cpp", "*.hpp", "*.cc", "CMakeLists.txt"]
+      rust: ["*.rs", "Cargo.toml", "Cargo.lock"]
+      csharp: ["*.cs", "*.csproj", "Program.cs"]
+      go: ["*.go", "go.mod", "go.sum"]
+  
+  response_adaptation:
+    evidence_based:
+      - "Reference official documentation"
+      - "Cite performance benchmarks"
+      - "Mention best practices with sources"
+    
+    friendly_delivery:
+      - "Explain benefits enthusiastically"
+      - "Suggest improvements as experiments"
+      - "Encourage trying new approaches"
