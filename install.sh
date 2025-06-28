@@ -1460,6 +1460,10 @@ if [[ "$DRY_RUN" != true ]]; then
         -not -path "*/.logs" \
         -not -path "*/.logs/*" \
         | while read -r dir; do
+        # Skip the .claude directory itself
+        if [[ "$dir" == ".claude" ]]; then
+            continue
+        fi
         # Strip .claude/ prefix
         target_dir="${dir#.claude/}"
         if [[ -n "$target_dir" ]] && [[ "$target_dir" != "." ]]; then
